@@ -22,7 +22,7 @@ const Header = () => {
     }
   }
   return (
-    <div className="bg-gray-700  font-space ">
+    <div className="bg-yellow-600  font-space ">
       <div className="container mx-auto py-8">
         <h1 className="text-3xl font-bold text-center text-white">
           Lingual Lookup
@@ -32,7 +32,7 @@ const Header = () => {
         </p>
 
         <div className="flex items-center justify-center mt-5">
-          <div className="flex border-2 border-gray-200 rounded">
+          <div className="flex border-2 border-gray-300 rounded">
             <input
               className="px-4 py2 md:w-80"
               type="text"
@@ -41,7 +41,7 @@ const Header = () => {
             />
 
             <button
-              className="bg-blue-400 border-l px-4 py-2 text-white"
+              className="bg-purple-500 border-l px-4 py-2 text-white"
               onClick={handleSubmit}
             >
               Search

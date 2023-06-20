@@ -8,7 +8,7 @@ import ResultList from "./components/ResultList";
 export const inputContext = createContext<any>(null);
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState<string>("");
 
   const value: object = {
     inputValue,
