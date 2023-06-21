@@ -56,12 +56,12 @@ const ResultList = () => {
 
   return (
     <div className="container mx-auto p-4 max-w-2xl">
-      <h2 className="text-3xl font-bold mt-4 pb-2 font-space text-slate-700">
+      <h2 className="text-4xl font-medium mt-4 pb-2 pl-5 font-space text-slate-700">
         {inputValue.slice(0, 1).toUpperCase() + inputValue.slice(1)}{" "}
       </h2>
-      <div className="flex items-center">
-        <p className="text-purple-600 pb-2 text-base mr-2">{response.phonetic}</p>
-        { response.phonetics[0].audio ? <button className="sound-icon pl-3 pb-2 " onClick={handlePlayAudio}>
+      <div className="flex items-center pl-5 ">
+        <p className="text-purple-600 pb-2 text-base pb-4  mr-2">{response.phonetic}</p>
+        { response.phonetics[0].audio ? <button className="sound-icon pl-3 pb-3 " onClick={handlePlayAudio}>
           <img className="w-6 h-6" src={sound} alt="Sound icon" />{" "}
         </button> : null}
       </div>
